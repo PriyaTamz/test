@@ -6,6 +6,7 @@ import ReactFlow, {
   ReactFlowProvider,
   Elements
 } from "react-flow-renderer";
+import Sidebar from "./Sidebar";
 
 const initialElements = [
   {
@@ -49,6 +50,7 @@ const App = () => {
   return (
     <ReactFlowProvider>
       <div>
+        <Sidebar />
         <ReactFlow
           elements={elements}
           onElementsRemove={onElementsRemove}
